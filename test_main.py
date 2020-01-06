@@ -26,7 +26,7 @@ def test_health(client):
     response = client.get('/')
     assert response.status_code == 200
     assert response.json == 'Healthy'
-    assert 2 == 1
+    assert 0
 
 def test_auth(client):
     body = {'email': EMAIL,
